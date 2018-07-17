@@ -1,0 +1,19 @@
+{
+  "name": "kv-act-pk",
+  "version": "1.0.0",
+  "description": "A key-value service for mapping accounts to public keys.",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "truffle-hdwallet-provider": "0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Valta",
+  "license": "ISC"
+}
