@@ -11,6 +11,15 @@ module.exports = {
       port: 7545,
       network_id: "*"
     },
+    ropsten: {
+      provider: () =>
+        new HDWalletProvider(
+          MNEMONIC,
+          `https://ropsten.infura.io/${INFURA_TOKEN}`
+        ),
+      network_id: "3",
+      gas: 4700000
+    },
     rinkeby: {
       provider: () =>
         new HDWalletProvider(
