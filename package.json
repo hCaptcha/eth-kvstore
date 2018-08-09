@@ -1,19 +1,31 @@
 {
-  "name": "kv-act-pk",
-  "version": "1.0.0",
-  "description": "A key-value service for mapping accounts to public keys.",
+  "name": "ethereum-kvstore",
+  "version": "0.0.1",
+  "description": "Key-value store on Ethereum",
   "main": "truffle.js",
   "directories": {
     "test": "test"
   },
+  "scripts": {
+    "compile": "truffle compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hCaptcha/ethereum-kvstore.git"
+  },
+  "keywords": [
+    "ethereum"
+  ],
+  "authors": [
+    "Robert Jan Valta <robert@intuitionmachines.com>",
+    "Alex Newman <alex@intuitionmachines.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/hCaptcha/ethereum-kvstore/blob/master/README.md",
   "dependencies": {
     "dotenv": "^6.0.0",
+    "truffle": "^4.1.13",
     "truffle-hdwallet-provider": "0.0.5"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Robert Valta",
-  "license": "ISC"
+  "devDependencies": {}
 }
