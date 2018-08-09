@@ -29,5 +29,8 @@
     "truffle": "^4.1.13",
     "truffle-hdwallet-provider": "0.0.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "solhint": "^1.2.1"
+  }
 }
