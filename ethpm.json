@@ -1,0 +1,11 @@
+{
+  "package_name": "ethereum-kvstore",
+  "version": "0.0.1",
+  "description": "Key-value store on Ethereum",
+  "authors": [
+    "Robert Jan Valta <robert@intuitionmachines.com>",
+    "Alex Newman <alex@intuitionmachines.com"
+  ],
+  "keywords": ["ethereum", "hcaptcha"],
+  "license": "ISC"
+}
