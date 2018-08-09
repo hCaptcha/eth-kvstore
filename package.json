@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "compile": "truffle compile"
+    "compile": "truffle compile",
+    "publish": "truffle publish",
+    "test": "truffle test"
   },
   "repository": {
     "type": "git",
