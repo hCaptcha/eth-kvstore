@@ -2,7 +2,7 @@
 A way to store key-value pairs tied to your ethereum address.
 
 ## Motivation
-Retrieving the public key of an ethereum address is impossible due to how address and public key is separately derived from the private key.
+Retrieving the public key of an ethereum address is impossible due to how address and public key are separately derived from the private key.
 
 We built this smart contract for our own needs to be able to map ethereum addresses to their corresponding public keys.
 
@@ -117,13 +117,13 @@ truffle migrate --network ropsten
 ```
 
 ## Contribute
-We welcome all Pull requests! Please run one or all of the following commands before commiting:
+We welcome all pull requests! Please ensure you lint before the commit.
 ```
 npm run lint
 ```
-You can inspect more linting scripts in our `package.json`.
+You can inspect more of our linting scripts at `package.json`.
 
-Please submit your pull request against our staging branch.
+Please submit your pull request against our `staging` branch.
 
 ## Credits
 Inspired by https://github.com/willhay/kvstore.
