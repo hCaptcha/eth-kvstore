@@ -24,8 +24,7 @@
     "ethereum"
   ],
   "authors": [
-    "Robert Jan Valta <robert@intuitionmachines.com>",
-    "Alex Newman <alex@intuitionmachines.com"
+    "HUMAN Protocol"
   ],
   "license": "MIT",
   "homepage": "https://github.com/hCaptcha/ethereum-kvstore/blob/master/README.md",
