@@ -1,5 +1,5 @@
 {
-  "name": "ethereum-kvstore",
+  "name": "eth-kvstore",
   "version": "0.0.1",
   "description": "Key-value store on Ethereum",
   "main": "truffle.js",
