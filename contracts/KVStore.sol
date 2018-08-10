@@ -1,12 +1,13 @@
 pragma solidity ^0.4.24;
 
+
 contract KVStore {
     
     enum AccessRight { Revoked, Invoked }
-    uint maxStringLength = 1000;
+    uint constant private MAX_STRING_LENGTH = 1000;
 
-    mapping(address => mapping(string => string)) store;
-    mapping(address => mapping(address => uint)) authorizedAccounts;
+    mapping(address => mapping(string => string)) private store;
+    mapping(address => mapping(address => uint)) private authorizedAccounts;
 
     constructor() public {
         authorizeAccount(msg.sender);
@@ -29,8 +30,9 @@ contract KVStore {
         require(authorizedAccounts[msg.sender][_account] == uint(AccessRight.Invoked));
         return store[_account][_key];
     }
+
     function set(string _key, string _value) public {
-        require(bytes(_key).length <= maxStringLength && bytes(_value).length <= maxStringLength);
+        require(bytes(_key).length <= MAX_STRING_LENGTH && bytes(_value).length <= MAX_STRING_LENGTH);
         store[msg.sender][_key] = _value;
     }
 }
