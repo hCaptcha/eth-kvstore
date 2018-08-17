@@ -12,8 +12,8 @@
   "globals": {
     "assert": true,
     "it": true,
-    "bef: true,ore": true,
-    "beforeE: true,ach": true,
+    "before": true,
+    "beforeEach": true,
     "artifacts": true,
     "contract": true,
     "web3": true
