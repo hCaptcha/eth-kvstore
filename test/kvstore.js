@@ -20,8 +20,8 @@ contract('KVStore', async (accounts) => {
     const instance = await KVStore.deployed();
     const [accountOne, accountTwo] = accounts;
     await instance.authorizeAccount(accountTwo, { from: accountOne });
-    const authorizedAccount = await instance.isAuthorized(accountTwo, {
-      from: accountOne,
+    const authorizedAccount = await instance.isAuthorized(accountOne, {
+      from: accountTwo,
     });
     assert.equal(authorizedAccount, 1);
   });
@@ -41,8 +41,8 @@ contract('KVStore', async (accounts) => {
     const instance = await KVStore.deployed();
     const [accountOne, accountTwo] = accounts;
     await instance.authorizeAccount(accountTwo, { from: accountOne });
-    let authorizedAccount = await instance.isAuthorized(accountTwo, {
-      from: accountOne,
+    let authorizedAccount = await instance.isAuthorized(accountOne, {
+      from: accountTwo,
     });
     assert.equal(authorizedAccount, 1);
 
