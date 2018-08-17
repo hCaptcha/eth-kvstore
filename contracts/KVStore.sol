@@ -23,11 +23,11 @@ contract KVStore {
     }
 
     function isAuthorized(address _account) public view returns(uint) {
-        return authorizedAccounts[_account][msg.sender];
+        return authorizedAccounts[msg.sender][_account];
     }
 
     function get(address _account, string _key) public view returns(string) {
-        require(authorizedAccounts[msg.sender][_account] == uint(AccessRight.Invoked));
+        require(isAuthorized(_account) == uint(AccessRight.Invoked));
         return store[_account][_key];
     }
 
