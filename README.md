@@ -2,9 +2,9 @@
 A way to store key-value pairs tied to your ethereum address.
 
 ## Motivation
-Retrieving the public key of an ethereum address is impossible due to how address and public key are separately derived from the private key.
+We built this smart contract for our own needs in the HUMAN Protocol to allow ethereum addresses to publish and rotate public keys for signing and encrypting arbitrary data.
 
-We built this smart contract for our own needs to be able to map ethereum addresses to their corresponding public keys.
+Separating identity (ETH addr keypair) and signing/encryption (public key published by ETH addr) means we avoid putting the identity key at risk via chosen-plaintext or known-plaintext attacks on the signing/encryption keys, and can easily rotate signing/encryption keys as needed.
 
 ## Prerequisites
 Three environment variables are needed to interact with the contract:
@@ -125,8 +125,8 @@ You can inspect more of our linting scripts at `package.json`.
 
 Please submit your pull request against our `staging` branch.
 
-## Credits
-Inspired by https://github.com/willhay/kvstore.
+## Prior Work
+An earlier version of our specification was implemented at: https://github.com/willhay/kvstore.
 
 ## License
 MIT &copy; HUMAN Protocol 
