@@ -2,7 +2,7 @@
 A way to store key-value pairs tied to your ethereum address.
 
 ## Motivation
-We built this smart contract for our own needs in the HUMAN Protocol to allow ethereum addresses to publish and rotate public keys for signing and encrypting arbitrary data.
+We built this smart contract for our own needs in the [HUMAN Protocol](https://www.hmt.ai/) to allow ethereum addresses to publish and rotate public keys for signing and encrypting arbitrary data.
 
 Separating identity (ETH addr keypair) and signing/encryption (public key published by ETH addr) means we avoid putting the identity key at risk via chosen-plaintext or known-plaintext attacks on the signing/encryption keys, and can easily rotate signing/encryption keys as needed.
 
