@@ -77,18 +77,6 @@ set('satoshi', 'nakamoto');
 get('satoshi');
 ```
 
-#### Challenge 1:
-
-Try storing a key-value pair by using the `set` method. Can you retrieve the value with your own account?
-
-#### Challenge 2:
-
-Authorize another one of your wallets with the `authorizeAccount` method. Can that account retrieve the value you stored prior?
-
-#### Challenge 3:
-
-Revoke access to one of your authorized accounts with `revokeAccount` method. Set a new key-value pair. Can the revoked account retrieve the newly set value?
-
 ## Installation
 You need Node as your environmental dependency. At the moment this is guaranteed to work with Node 8.
 
