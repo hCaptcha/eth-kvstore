@@ -16,7 +16,7 @@ const { MNEMONIC, INFURA_TOKEN, KVSTORE_ADDRESS } = process.env;
 
 `INFURA_TOKEN` is our gateway to the Ethereum blockchain and lets us easily interact with our contract without setting up our own node. You can get your token easily from https://infura.io/
 
-`KVSTORE_ADDRESS` is the location where KVStore has been deployed. Current location of our Ropsten testnet deployment is in the following address: `0x414538f08a1363f8051a22f47655f9dc5d3c9850`. You can also deploy your own KVStore by following the `Deployment` section of the guide.
+`KVSTORE_ADDRESS` is the location where KVStore has been deployed. Current location of our Ropsten testnet deployment is in the following address: `0xc1db3c61b47d1f7d6529e435d5b360865a3130bc`. You can also deploy your own KVStore by following the `Deployment` section of the guide.
 
 Once you have setup all the needed prerequisites, setup your local `.env` file in the root of your project
 ```
