@@ -1,4 +1,6 @@
 ## eth-kvstore
+[![Travis Build Status](https://travis-ci.org/hCaptcha/eth-kvstore.svg?&branch=master)](https://travis-ci.org/hCaptcha/eth-kvstore)
+
 A way to store key-value pairs tied to your ethereum address.
 
 ## Motivation

@@ -14,7 +14,7 @@
     "lint": "npm run lint:js && npm run lint:sol",
     "publish": "truffle publish",
     "pretest": "npm run lint",
-    "test": "truffle test"
+    "test": "truffle migrate; truffle test"
   },
   "repository": {
     "type": "git",
@@ -30,8 +30,8 @@
   "homepage": "https://github.com/hCaptcha/ethereum-kvstore/blob/master/README.md",
   "dependencies": {
     "dotenv": "^6.0.0",
-    "truffle": "^4.1.13",
-    "truffle-hdwallet-provider": "0.0.5"
+    "truffle": "^4.1.14",
+    "truffle-hdwallet-provider": "0.0.6"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
