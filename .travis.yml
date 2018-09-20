@@ -1,0 +1,15 @@
+---
+language: node_js
+cache:
+  yarn: true
+  directories:
+    - node_modules
+script:
+  - npm install -g ganache-cli
+  - ganache-cli -p 7545 > /dev/null &
+  - sleep 5
+  - yarn install
+  - yarn test
+notifications:
+  slack:
+    secure: wMJM+iGWxiMgVSisD0qRGRjKgHgfjrXzS1zHxPbnJLn1BH1JF/48O0+Yn4QOVAf7aa0WXSDvSkHnnXwMtoh9RZ2OgN++93aq27wZRDDDlhG/sHX1uMRg5RIO6tIUZKUjJN/SuVxzJ9YVG/yq97U9CQZVd74xDcS2lXu0COTznIw3AZfm14Kv0Gw9ikJut1tulqakHLjnaxI0a+BQVNnmryx5yTUXhG7LgHWfLZ7qUD8ZB20UtrF4Qvl3/wBRoqgpOPWsifUfufARPForMSh//5Gw1DfTtJZ2+B1VgHgfj9RHFKkWke/jvg39mF0aRxrjnWOkIU3Gj+NOt4OhR7unwbScm0wcxm57KbdoHy9dSbS2G6Bma0sYbManShjQiMXQJXYW/nCBLTPXeo/EMtHvpwUZFxIs7HHIcG2BBJ7113DkDZXddatQBCAid/UO25RQ2xooG5E2Obw2o7liqCc9+qYEOQfelganx324dIb2OfJnLDpKveetvdY2YZ16lX+CLZ7+Y0FT8wUR03kqdUqlY4KleXJZci52Oq6Iu20iUdhKo4o/fEQjchwyDZSW8BsbO2BCPFgUm4TMkAad0rGPt4kqEMDeIzAC0XMpdUGXZ+tQd1QJOR99RWTw3DDjq63aepaJn3MqPHVBYA1LqruiMOyxr8m06Qrr4nIZYEGtyro=
