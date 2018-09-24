@@ -112,8 +112,8 @@ We welcome all pull requests! Please ensure you lint before the commit.
 npm run lint
 ```
 You can inspect more of our linting scripts at `package.json`.
-
 Please submit your pull request against our `staging` branch.
+If you find a bug feel free to [Click](https://github.com/hCaptcha/bounties)
 
 ## Prior Work
 An earlier version of our specification was implemented at: https://github.com/willhay/kvstore.
