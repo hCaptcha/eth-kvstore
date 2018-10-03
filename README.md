@@ -114,6 +114,7 @@ npm run lint
 You can inspect more of our linting scripts at `package.json`.
 Please submit your pull request against our `staging` branch.
 If you find a bug feel free to [Click](https://github.com/hCaptcha/bounties)
+You can reach out to us on [telegram](https://t.me/hcaptchachat) 
 
 ## Prior Work
 An earlier version of our specification was implemented at: https://github.com/willhay/kvstore.
