@@ -5,6 +5,9 @@
     "mocha": true,
     "es6": true
   },
+  "rules": {
+    "no-console": "off"
+  },
   "parserOptions": {
     "ecmaVersion": 8,
     "sourceType": "module"
@@ -16,6 +19,7 @@
     "beforeEach": true,
     "artifacts": true,
     "contract": true,
-    "web3": true
+    "web3": true,
+    "no-console": false
   }
 }
