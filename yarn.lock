@@ -84,6 +84,10 @@ aria-query@^3.0.0:
     ast-types-flow "0.0.7"
     commander "^2.11.0"
 
+armlet@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/armlet/-/armlet-0.1.8.tgz#19ea8a74a8070e5df9320bbcfb5c913d14b24f17"
+
 array-includes@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/array-includes/-/array-includes-3.0.3.tgz#184b48f62d92d7452bb31b323165c7f8bd02266d"
