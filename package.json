@@ -9,9 +9,10 @@
   "scripts": {
     "compile": "truffle compile",
     "fix:js": "eslint --fix test/** migrations/**",
-    "lint:js": "eslint test/** migrations/**",
+    "lint:js": "eslint test/** migrations/** security/**",
     "lint:sol": "solhint contracts/*.sol contracts/*/*.sol test/*.sol test/*/*.sol",
     "lint": "npm run lint:js && npm run lint:sol",
+    "mythril": "node security/mythril.js",
     "publish": "truffle publish",
     "pretest": "npm run lint",
     "test": "truffle migrate; truffle test"
@@ -29,6 +30,7 @@
   "license": "MIT",
   "homepage": "https://github.com/hCaptcha/ethereum-kvstore/blob/master/README.md",
   "dependencies": {
+    "armlet": "^0.1.8",
     "dotenv": "^6.0.0",
     "truffle": "^4.1.14",
     "truffle-hdwallet-provider": "0.0.6"
