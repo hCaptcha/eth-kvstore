@@ -32,7 +32,7 @@
   "dependencies": {
     "armlet": "^0.1.8",
     "dotenv": "^6.0.0",
-    "truffle": "^4.1.14",
+    "truffle": "^5.0.3",
     "truffle-hdwallet-provider": "0.0.6"
   },
   "devDependencies": {
