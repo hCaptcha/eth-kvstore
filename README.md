@@ -83,7 +83,7 @@ get('satoshi');
 
 The built docker image at `hcaptcha/eth-kvstore` will by default deploy the eth-kvstore contract to whatever is defined by `ETH_HOST` and `ETH_PORT` and the provided credentials as described above, if present.
 
-It will drop the address of the deployed contract into the default path `/deployed/ethkvstore.address.json` that can be used by various other tools by providing a volume mount and reading the contents of that file.  The destination can be overridden via the `ADDRESS_OUTPUT_FILENAME` env var.
+It will drop the address of the deployed contract into the default path `./ethkvstore.address.json` that can be used by various other tools by providing a volume mount and reading the contents of that file.  The destination can be overridden via the `ADDRESS_OUTPUT_FILENAME` env var.
 
 To quickly see this in action, run:
 

@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hCaptcha/ethereum-kvstore.git"
+    "url": "git+https://github.com/hCaptcha/eth-kvstore.git"
   },
   "keywords": [
     "ethereum"
@@ -30,7 +30,7 @@
     "HUMAN Protocol"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/hCaptcha/ethereum-kvstore/blob/master/README.md",
+  "homepage": "https://github.com/hCaptcha/eth-kvstore",
   "dependencies": {
     "armlet": "^0.1.8",
     "dotenv": "^6.0.0",

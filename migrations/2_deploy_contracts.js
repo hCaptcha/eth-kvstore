@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ADDRESS_OUTPUT_FILENAME = process.env.ADDRESS_OUTPUT_FILENAME || '/deployed/ethkvstore.address.json';
+const ADDRESS_OUTPUT_FILENAME = process.env.ADDRESS_OUTPUT_FILENAME || 'ethkvstore.address.json';
 const KVStore = artifacts.require('./KVStore.sol');
 
 module.exports = (deployer) => {
