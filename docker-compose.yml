@@ -7,25 +7,9 @@ services:
 
   kvstore:
     build: .
-    image: hcaptcha/eth-kvstore
+    image: hcaptcha/eth-kvstore:latest
     environment:
       - ETH_HOST=ganache
       - ETH_PORT=8545
-      - ADDRESS_OUTPUT_FILENAME=/deployed/ethkvstore.address.json
     depends_on:
       - ganache
-    volumes:
-      - deployed:/deployed
-
-  # I'll get rid of this, just wanna see it work
-  test:
-    image: alpine
-    command: sh -c " while [ ! -f /deployed/ethkvstore.address.json ]; do sleep 1 ;done ; cat /deployed/ethkvstore.address.json"
-    depends_on:
-      - kvstore
-    volumes:
-      - deployed:/deployed
-
-volumes:
-  deployed:
-
