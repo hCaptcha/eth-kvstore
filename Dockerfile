@@ -4,10 +4,7 @@ FROM node:alpine
 WORKDIR /work
 RUN apk update && \
     apk upgrade && \
-    apk add git python-dev build-base curl && \
-    npm install -g yarn && \
-    yarn global add truffle
-
+    apk add git python-dev build-base
 COPY package.json package-lock.json /work/
 RUN npm install
 
