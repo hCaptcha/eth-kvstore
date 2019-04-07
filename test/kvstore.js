@@ -54,4 +54,10 @@ contract('KVStore', async (accounts) => {
       assert.ok(/revert/.test(err.message));
     }
   });
+
+  it('outputs an address on deployment', async () => {
+    const instance = await KVStore.deployed();
+    assert.typeOf(instance.address, 'string');
+    assert.isAtLeast(instance.address.length, 10);
+  });
 });

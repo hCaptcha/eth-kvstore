@@ -79,6 +79,21 @@ set('satoshi', 'nakamoto');
 get('satoshi');
 ```
 
+## Docker usage
+
+The built docker image at `hcaptcha/eth-kvstore` will by default deploy the eth-kvstore contract to whatever is defined by `ETH_HOST` and `ETH_PORT` and the provided credentials as described above, if present.
+
+It will drop the address of the deployed contract into the default path `./ethkvstore.address.json` that can be used by various other tools by providing a volume mount and reading the contents of that file.  The destination can be overridden via the `ADDRESS_OUTPUT_FILENAME` env var.
+
+To quickly see this in action, run:
+
+```bash
+docker-compose up
+# or
+docker run -it --rm -v $(pwd)/deployed:/deployed hcaptcha/eth-kvstore
+cat deployed/ethkvstore.address.json
+```
+
 ## Installation
 You need Node as your environmental dependency. At the moment this is guaranteed to work with Node 8.
 
@@ -114,10 +129,12 @@ npm run lint
 You can inspect more of our linting scripts at `package.json`.
 Please submit your pull request against our `staging` branch.
 If you find a bug feel free to [Click](https://github.com/hCaptcha/bounties)
-You can reach out to us on [telegram](https://t.me/hcaptchachat) 
+You can reach out to us on [telegram](https://t.me/hcaptchachat)
 
 ## Prior Work
 An earlier version of our specification was implemented at: https://github.com/willhay/kvstore.
 
 ## License
-MIT &copy; HUMAN Protocol 
+MIT &copy; HUMAN Protocol
+
+
