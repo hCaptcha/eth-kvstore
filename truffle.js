@@ -24,8 +24,14 @@ module.exports = {
       gas: 4700000,
     },
     rinkeby: {
-      provider: () => new HDWalletProvider(MNEMONIC, `https://rinkeby.infura.io/${INFURA_TOKEN}`),
+      provider: () => new HDWalletProvider(MNEMONIC, 'https://quiknode.io/node/5bb3730c-b155-48ed-9b39-0ef9c3c76c92/QJp4SJ9fMZWnrqE3YN8zJQ=='),
       network_id: '4',
     },
   },
+
+  compilers: {
+    solc: {
+      version: '0.4.24'
+    }
+  }
 };
