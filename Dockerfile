@@ -1,5 +1,5 @@
 
-FROM node:alpine
+FROM node:10-alpine
 
 WORKDIR /work
 RUN apk update && \
